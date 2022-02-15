@@ -1,0 +1,539 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "GraphQL.Client/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL.Client.Abstractions": "3.2.4",
+          "GraphQL.Client.Abstractions.Websocket": "3.2.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Client.dll": {}
+        }
+      },
+      "GraphQL.Client.Abstractions/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL.Primitives": "3.2.4",
+          "System.Reactive": "4.3.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Client.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Client.Abstractions.dll": {}
+        }
+      },
+      "GraphQL.Client.Abstractions.Websocket/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL.Client.Abstractions": "3.2.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Client.Abstractions.Websocket.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Client.Abstractions.Websocket.dll": {}
+        }
+      },
+      "GraphQL.Primitives/3.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GraphQL.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Primitives.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Piwik.Tracker/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Piwik.Tracker.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Piwik.Tracker.dll": {}
+        }
+      },
+      "Sentry/3.9.4": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Sentry.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Sentry.dll": {}
+        }
+      },
+      "Speckle.Core/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "GraphQL.Client": "3.2.4",
+          "Microsoft.CSharp": "4.7.0",
+          "Piwik.Tracker": "3.0.0",
+          "Sentry": "3.9.4",
+          "Speckle.Newtonsoft.Json": "12.0.3.1",
+          "System.Data.SQLite.Core": "1.0.115"
+        },
+        "compile": {
+          "lib/netstandard2.0/SpeckleCore2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SpeckleCore2.dll": {}
+        }
+      },
+      "Speckle.Newtonsoft.Json/12.0.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Speckle.Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Speckle.Newtonsoft.Json.dll": {}
+        }
+      },
+      "Speckle.Objects/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Speckle.Core": "2.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Objects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Objects.dll": {}
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.115": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.115": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.115]"
+        }
+      },
+      "System.Reactive/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.0/System.Reactive.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GraphQL.Client/3.2.4": {
+      "sha512": "5UB4Q0q9FOp4mp0OpfxtA0Zm6vy36qZdScVh1g2Dv9eLLwmdCeZ1NIejSOhRW0B0YvK580X1AmPLH9/l+D4EeA==",
+      "type": "package",
+      "path": "graphql.client/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "graphql.client.3.2.4.nupkg.sha512",
+        "graphql.client.nuspec",
+        "icon.png",
+        "lib/net461/GraphQL.Client.dll",
+        "lib/net461/GraphQL.Client.xml",
+        "lib/netstandard2.0/GraphQL.Client.dll",
+        "lib/netstandard2.0/GraphQL.Client.xml"
+      ]
+    },
+    "GraphQL.Client.Abstractions/3.2.4": {
+      "sha512": "51LYbe41RazWwoHOcVpd9RthAOrWp/bs6dW299QInh1Lkt3uVcFq6i2XH+y9hzoKbraE+JpEpIefO7UIiG0uLQ==",
+      "type": "package",
+      "path": "graphql.client.abstractions/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "graphql.client.abstractions.3.2.4.nupkg.sha512",
+        "graphql.client.abstractions.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/GraphQL.Client.Abstractions.dll",
+        "lib/netstandard2.0/GraphQL.Client.Abstractions.xml"
+      ]
+    },
+    "GraphQL.Client.Abstractions.Websocket/3.2.4": {
+      "sha512": "XwTnbuaTtsNiYueyeCMJzO57Bg7EN9BPZ2tGMjyVhVXqAIUiOGzaG0MP/6KZidWvydOV3VYEex7VoqirtueBdw==",
+      "type": "package",
+      "path": "graphql.client.abstractions.websocket/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "graphql.client.abstractions.websocket.3.2.4.nupkg.sha512",
+        "graphql.client.abstractions.websocket.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/GraphQL.Client.Abstractions.Websocket.dll",
+        "lib/netstandard2.0/GraphQL.Client.Abstractions.Websocket.xml"
+      ]
+    },
+    "GraphQL.Primitives/3.2.4": {
+      "sha512": "2GFvSKFVO9EYuNgWVTspHAY769+dI2THBW+1cH7ZmmpCiee/llbPTJSVZx2J7zDpSAbeR5EUoF3a5T80w1sP2A==",
+      "type": "package",
+      "path": "graphql.primitives/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "graphql.primitives.3.2.4.nupkg.sha512",
+        "graphql.primitives.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/GraphQL.Primitives.dll",
+        "lib/netstandard2.0/GraphQL.Primitives.xml"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Piwik.Tracker/3.0.0": {
+      "sha512": "91mJZeyxFUhA9t2oFTVw+W7p9t7+oZ1KAPfvGUvAkX2m/74xDlPsp8qfs4UIW9XE+TrU7PCBn43QPh0rP9jeOA==",
+      "type": "package",
+      "path": "piwik.tracker/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Piwik.Tracker.XML",
+        "lib/net40/Piwik.Tracker.dll",
+        "piwik.tracker.3.0.0.nupkg.sha512",
+        "piwik.tracker.nuspec"
+      ]
+    },
+    "Sentry/3.9.4": {
+      "sha512": "q7LK5E/xNNNO0hVNYjvTqOKAzzKy2+YHxtmd9WKlrp2bo9/55VMtyQmqqjacQ8Tha6ugj50Z5XWu+2IEUiN4+Q==",
+      "type": "package",
+      "path": "sentry/3.9.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/Sentry.dll",
+        "lib/net461/Sentry.xml",
+        "lib/net5.0/Sentry.dll",
+        "lib/net5.0/Sentry.xml",
+        "lib/netcoreapp3.0/Sentry.dll",
+        "lib/netcoreapp3.0/Sentry.xml",
+        "lib/netstandard2.0/Sentry.dll",
+        "lib/netstandard2.0/Sentry.xml",
+        "lib/netstandard2.1/Sentry.dll",
+        "lib/netstandard2.1/Sentry.xml",
+        "sentry-nuget.png",
+        "sentry.3.9.4.nupkg.sha512",
+        "sentry.nuspec"
+      ]
+    },
+    "Speckle.Core/2.3.0": {
+      "sha512": "6PyTGqitj3h5p5PNrC2ubksox0Nt5sYIdOfPylCTxZP5FWcp0oRfCmU26cIFLuMk5SMDvCkySO5xMqP4CD8S/Q==",
+      "type": "package",
+      "path": "speckle.core/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/SpeckleCore2.dll",
+        "lib/netstandard2.0/SpeckleCore2.xml",
+        "logo.png",
+        "speckle.core.2.3.0.nupkg.sha512",
+        "speckle.core.nuspec"
+      ]
+    },
+    "Speckle.Newtonsoft.Json/12.0.3.1": {
+      "sha512": "yM+DdKzI++HY4FYbloGcPGQ0yrfSv5/a5Rd+iYuzj47ATRtb2M5oCEVcxM4Xum5EDq0BMwkIY/cw/DMlRrZFDA==",
+      "type": "package",
+      "path": "speckle.newtonsoft.json/12.0.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Speckle.Newtonsoft.Json.dll",
+        "lib/net20/Speckle.Newtonsoft.Json.pdb",
+        "lib/net20/Speckle.Newtonsoft.Json.xml",
+        "lib/net35/Speckle.Newtonsoft.Json.dll",
+        "lib/net35/Speckle.Newtonsoft.Json.pdb",
+        "lib/net35/Speckle.Newtonsoft.Json.xml",
+        "lib/net40/Speckle.Newtonsoft.Json.dll",
+        "lib/net40/Speckle.Newtonsoft.Json.pdb",
+        "lib/net40/Speckle.Newtonsoft.Json.xml",
+        "lib/net45/Speckle.Newtonsoft.Json.dll",
+        "lib/net45/Speckle.Newtonsoft.Json.pdb",
+        "lib/net45/Speckle.Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Speckle.Newtonsoft.Json.deps.json",
+        "lib/netstandard1.0/Speckle.Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Speckle.Newtonsoft.Json.pdb",
+        "lib/netstandard1.0/Speckle.Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Speckle.Newtonsoft.Json.deps.json",
+        "lib/netstandard1.3/Speckle.Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Speckle.Newtonsoft.Json.pdb",
+        "lib/netstandard1.3/Speckle.Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Speckle.Newtonsoft.Json.deps.json",
+        "lib/netstandard2.0/Speckle.Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Speckle.Newtonsoft.Json.pdb",
+        "lib/netstandard2.0/Speckle.Newtonsoft.Json.xml",
+        "packageIcon.png",
+        "speckle.newtonsoft.json.12.0.3.1.nupkg.sha512",
+        "speckle.newtonsoft.json.nuspec"
+      ]
+    },
+    "Speckle.Objects/2.3.0": {
+      "sha512": "qJB8YDkyYWn/hww/Zc09nu8wmFkocF2Tpwe8IMKetiwnLJlzhfzVGzXSaIYZUq8YT7JtTwVAIVtNLcmZFaGIZA==",
+      "type": "package",
+      "path": "speckle.objects/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Objects.dll",
+        "lib/netstandard2.0/Objects.xml",
+        "logo.png",
+        "speckle.objects.2.3.0.nupkg.sha512",
+        "speckle.objects.nuspec"
+      ]
+    },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.115": {
+      "sha512": "afpVRUKjuLZ17W2iv779YORpWQN40rJ82g/ASC6Yq1J4emO+8hL316AISf5nJWfXecygLdqevzXxQZR7z2yRww==",
+      "type": "package",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.115",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Data.SQLite.dll",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.0/System.Data.SQLite.xml",
+        "lib/netstandard2.1/System.Data.SQLite.dll",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
+        "lib/netstandard2.1/System.Data.SQLite.xml",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.115.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.115": {
+      "sha512": "OuzSKnAnXtbsB7MUddjLiLAUEuEu8kJco3jWllZs+zgYmuiK5VHUHafD74C65HwnnmWVHUvFBrJ0NDAKINuGNQ==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.115",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.115.nupkg.sha512",
+        "system.data.sqlite.core.nuspec"
+      ]
+    },
+    "System.Reactive/4.3.2": {
+      "sha512": "WhGkScPWxw2pp7UwRW8M1OvYZ3WUDPC2wJ0aiuaB4KRD3bt4wLkgHgYnOUu87WRhsurvv5LN0E63iWOEza2o8g==",
+      "type": "package",
+      "path": "system.reactive/4.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.3.2.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Speckle.Core >= 2.3.0",
+      "Speckle.Objects >= 2.3.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/dim/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/dim/Source/experiments/test3/FlattenFilterSpeckle.csproj",
+      "projectName": "FlattenFilterSpeckle",
+      "projectPath": "/Users/dim/Source/experiments/test3/FlattenFilterSpeckle.csproj",
+      "packagesPath": "/Users/dim/.nuget/packages/",
+      "outputPath": "/Users/dim/Source/experiments/test3/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/dim/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Speckle.Core": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
+          "Speckle.Objects": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.405/RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Piwik.Tracker 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Piwik.Tracker",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

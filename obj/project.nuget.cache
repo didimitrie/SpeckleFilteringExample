@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "v1wQc5tOflqZFMAzSq9GMURnjanDLHx0DhjBzSUnH+No7d8MsfYeuXjf2qgPfDWeCJ25LLK50je/hE/6fIsVEg==",
+  "success": true,
+  "projectFilePath": "/Users/dim/Source/experiments/test3/FlattenFilterSpeckle.csproj",
+  "expectedPackageFiles": [
+    "/Users/dim/.nuget/packages/graphql.client/3.2.4/graphql.client.3.2.4.nupkg.sha512",
+    "/Users/dim/.nuget/packages/graphql.client.abstractions/3.2.4/graphql.client.abstractions.3.2.4.nupkg.sha512",
+    "/Users/dim/.nuget/packages/graphql.client.abstractions.websocket/3.2.4/graphql.client.abstractions.websocket.3.2.4.nupkg.sha512",
+    "/Users/dim/.nuget/packages/graphql.primitives/3.2.4/graphql.primitives.3.2.4.nupkg.sha512",
+    "/Users/dim/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/dim/.nuget/packages/piwik.tracker/3.0.0/piwik.tracker.3.0.0.nupkg.sha512",
+    "/Users/dim/.nuget/packages/sentry/3.9.4/sentry.3.9.4.nupkg.sha512",
+    "/Users/dim/.nuget/packages/speckle.core/2.3.0/speckle.core.2.3.0.nupkg.sha512",
+    "/Users/dim/.nuget/packages/speckle.newtonsoft.json/12.0.3.1/speckle.newtonsoft.json.12.0.3.1.nupkg.sha512",
+    "/Users/dim/.nuget/packages/speckle.objects/2.3.0/speckle.objects.2.3.0.nupkg.sha512",
+    "/Users/dim/.nuget/packages/stub.system.data.sqlite.core.netstandard/1.0.115/stub.system.data.sqlite.core.netstandard.1.0.115.nupkg.sha512",
+    "/Users/dim/.nuget/packages/system.data.sqlite.core/1.0.115/system.data.sqlite.core.1.0.115.nupkg.sha512",
+    "/Users/dim/.nuget/packages/system.reactive/4.3.2/system.reactive.4.3.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Piwik.Tracker 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Piwik.Tracker",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
